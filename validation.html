@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation using JS</title>
+  </head>
+  <body>
+    <form action="" name="form" onsubmit="return validateForm(event)">
+      <div class="content1">
+        <h1>Registration Form</h1>
+        <div class="name">
+          <label for="">Name</label>
+          <input type="text" id="name" />
+          <div id="nameError" style="color: red"></div>
+        </div>
+
+        <br />
+        <div class="Username">
+          <label for="">Username</label>
+          <input type="text" id="username" />
+          <div id="unameError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="Password">
+          <label for="">Password</label>
+          <input type="password" id="password" />
+          <div id="pwError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="Confirmpassword">
+          <label for="">Confirm Password</label>
+          <input type="password" id="confirmpassword" />
+          <div id="cpwError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="Phone">
+          <label for="">Phone</label>
+          <input type="text" id="phone" />
+          <div id="phoneError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="Email">
+          <label for="">Email</label>
+          <input type="text" id="email" />
+          <div id="emailError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="DOB">
+          <label for="">DOB</label>
+          <input type="text" id="year" />
+          <input type="text" id="month" />
+          <input type="text" id="day" />
+          <div id="dobError" style="color: red"></div>
+        </div>
+
+        <br />
+        <div class="Country">
+          <label for="">Country</label>
+          <select name="Country" id="country">
+            <option value=""></option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Nepal">Nepal</option>
+          </select>
+          <div id="countryError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="Gender">
+          <label for="">Gender</label>
+
+          <input type="radio" name="gender" value="Female" />Female
+          <input type="radio" name="gender" value="Male" />Male
+          <input type="radio" name="gender" value="Other" />Other
+
+          <div id="genderError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="Faculty">
+          <label for="">Faculty</label>
+          <input type="checkbox" name="faculty" value="BSCIT" />BSCIT
+          <input type="checkbox" name="faculty" value="BCA" />BCA
+          <input type="checkbox" name="faculty" value="BICT" />BICT
+          <div id="facultyError" style="color: red"></div>
+        </div>
+        <br />
+        <div class="parahere">
+          <input type="checkbox" name="parahere" />
+          I accept all the conditions and agrements
+
+          <div id="parahereError" style="color: red"></div>
+        </div>
+        <br />
+        <input type="submit" name="submit" id="submit" value="submit" />
+      </div>
+    </form>
+    <script src="./validation1.js"></script>
+  </body>
+</html>
